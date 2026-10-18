@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Pengaturan dasar halaman -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Tiara | Halaman Artis</title>
+
+    <!-- Deskripsi halaman untuk mesin pencari -->
+    <meta name="description" content="Portofolio Nama Kamu, UI/UX dan Web Developer di Yogyakarta. Proyek, pengalaman, alat kerja, dan rak buku.">
+
+    <!-- Warna tema browser -->
+    <meta name="theme-color" content="#121212">
+
+    <!-- Informasi ketika tautan dibagikan ke media sosial -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hi, I'm Tiara | UI/UX dan Web Developer">
+    <meta property="og:description" content="Portofolio dalam format halaman artis. Dengarkan proyekku.">
+
+    <!-- Ikon website -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <!-- Font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- File CSS untuk mengatur tampilan halaman -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER DAN NAVIGASI
+    ========================== -->
+    <header class="nv" id="nv">
+
+        <!-- Logo website -->
+        <a class="lg" href="#home">
+            <b aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+            </b>
+
+            tiara.fm
+        </a>
+
+        <!-- Menu navigasi menuju setiap bagian halaman -->
+        <nav aria-label="Navigasi utama">
+            <a href="#cerita" data-s="cerita" class="hm">About</a>
+            <a href="#disko" data-s="disko">Projects</a>
+            <a href="#tur" data-s="tur" class="hm">Milestones</a>
+            <a href="#alat" data-s="alat" class="hm">Tools</a>
+            <a href="#buku" data-s="buku" class="hm">Bookshelf</a>
+            <a href="#kontak" data-s="kontak">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO / HALAMAN UTAMA
+    ========================== -->
+    <header class="hero" id="home">
+
+        <!-- Ilustrasi profil berbentuk SVG -->
+        <div class="ph" id="ph" aria-hidden="true">
+
+            <svg id="ill" viewBox="0 0 400 500" preserveAspectRatio="xMidYMax slice">
+
+                <!-- Bentuk badan -->
+                <path d="M20 500c0-96 70-142 180-142s180 46 180 142z" fill="#1F2A27"/>
+
+                <!-- Detail pakaian -->
+                <path d="M130 360c20 26 50 40 70 40s50-14 70-40l-18-8c-14 18-36 30-52 30s-38-12-52-30z" fill="#141C1A"/>
+
+                <!-- Leher -->
+                <path d="M164 300h72v66c-14 18-58 18-72 0z" fill="#C98F66"/>
+
+                <!-- Bayangan leher -->
+                <path d="M164 336c20 14 52 14 72 0v-16c-20 12-52 12-72 0z" fill="#B27A55"/>
+
+                <!-- Wajah dan telinga -->
+                <ellipse cx="200" cy="240" rx="82" ry="98" fill="#E0A97E"/>
+                <ellipse cx="118" cy="246" rx="13" ry="22" fill="#D39A6F"/>
+                <ellipse cx="282" cy="246" rx="13" ry="22" fill="#D39A6F"/>
+
+                <!-- Rambut -->
+                <path d="M118 232c-6-96 74-130 124-110 40 14 54 54 40 112-14-34-46-56-90-56-34 0-62 14-74 54z" fill="#17120F"/>
+                <path d="M126 160c40-52 120-60 150-8-44-30-98-30-150 8z" fill="#241A14"/>
+
+                <!-- Headset -->
+                <path d="M112 228c-6-90 62-140 128-132 52 6 80 52 66 132" fill="none" stroke="#34E0A1" stroke-width="14" stroke-linecap="round"/>
+
+                <rect x="92" y="212" width="26" height="62" rx="13" fill="#34E0A1"/>
+                <rect x="282" y="212" width="26" height="62" rx="13" fill="#34E0A1"/>
+
+                <!-- Detail headset -->
+                <rect x="98" y="220" width="14" height="46" rx="7" fill="#1A9E73"/>
+                <rect x="288" y="220" width="14" height="46" rx="7" fill="#1A9E73"/>
+
+                <!-- Alis dan mata -->
+                <path d="M154 222q14-10 30-2M216 220q16-8 30 2" stroke="#17120F" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+                <ellipse cx="170" cy="242" rx="8" ry="9" fill="#fff"/>
+                <ellipse cx="230" cy="242" rx="8" ry="9" fill="#fff"/>
+
+                <circle cx="172" cy="244" r="5" fill="#2A1A10"/>
+                <circle cx="232" cy="244" r="5" fill="#2A1A10"/>
+
+                <!-- Hidung -->
+                <path d="M200 252q-8 28-4 36 8 6 16 0" fill="none" stroke="#B87D55" stroke-width="5" stroke-linecap="round"/>
+
+                <!-- Mulut -->
+                <path d="M168 300q32 24 64 0" fill="none" stroke="#8A4A32" stroke-width="6" stroke-linecap="round"/>
+
+                <!-- Pipi -->
+                <circle cx="152" cy="274" r="11" fill="#F0A58A" opacity=".5"/>
+                <circle cx="248" cy="274" r="11" fill="#F0A58A" opacity=".5"/>
+
+            </svg>
+
+        </div>
+
+
+        <!-- Informasi profil utama -->
+        <div class="hc" id="hc">
+
+            <!-- Label profesi -->
+            <span class="vf">
+
+                <!-- Ikon verifikasi -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="11"/>
+                    <path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                Terverifikasi: UI/UX dan Web Developer
+            </span>
+
+            <!-- Nama dan informasi singkat -->
+            <h1 class="nm">Hi, I'm Tiara</h1>
+
+            <div class="ml">
+                1.204 pendengar bulanan &middot; Yogyakarta
+            </div>
+
+            <!-- Pesan tambahan yang ditampilkan melalui JavaScript -->
+            <div class="hi" id="hi" hidden>
+                <p id="hit"></p>
+                <div id="hic"></div>
+            </div>
+
+            <!-- Tombol interaksi profil -->
+            <div class="act">
+
+                <button class="big" id="bigp" aria-label="Putar"></button>
+
+                <button class="fo" id="fo" aria-pressed="false">
+                    Ikuti
+                </button>
+
+                <!-- Menu opsi tambahan -->
+                <div class="mw">
+
+                    <button class="mo" id="mo" aria-label="Opsi lainnya" aria-haspopup="menu">
+                        &middot;&middot;&middot;
+                    </button>
+
+                    <div class="menu" id="menu" role="menu" hidden>
+                        <button role="menuitem" data-a="mail">Salin email</button>
+                        <button role="menuitem" data-a="link">Salin tautan halaman</button>
+                        <a role="menuitem"
+                        data-a="cv"
+                        href="/assets/CV_Asya.pdf"
+                        download="CV_Asya.pdf">
+                            Unduh CV
+                        </a>
+                        <button role="menuitem" data-a="role">Ganti peran</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Petunjuk untuk menggulir halaman -->
+        <div class="cue" id="cue" aria-hidden="true">
+            Gulir untuk mengenal lebih jauh
+            <i></i>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CERITA SINGKAT / ABOUT ME
+    ========================== -->
+    <section class="ly" id="cerita" aria-label="Cerita singkat">
+
+        <div class="lst">
+
+            <div class="w" style="width:100%">
+
+                <!-- Judul bagian dan identitas pemilik -->
+                <div class="lh">
+
+                    <span class="cv" id="lcv"></span>
+
+                    <div>
+                        <b>About Me</b>
+                        <span>Lyric &middot; Asya Tiara Syafitrah Susilo</span>
+                    </div>
+
+                </div>
+
+                <!-- Area teks cerita yang diatur oleh JavaScript -->
+                <div class="win">
+                    <div class="lines" id="lines"></div>
+                </div>
+
+                <!-- Indikator progres cerita -->
+                <div class="lp">
+                    <i id="lpi"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         KONTEN UTAMA PORTOFOLIO
+    ========================== -->
+    <main class="w">
+
+        <!-- Daftar proyek / portofolio -->
+        <section class="sec" id="disko">
+
+            <h2 class="rv">Projects</h2>
+
+            <p class="sb rv">
+                A collection of ideas on repeat, from fresh releases to timeless favorites.
+            </p>
+
+            <!-- Filter kategori proyek -->
+            <div class="chips rv" id="chips" role="group" aria-label="Filter kategori"></div>
+
+            <!-- Daftar proyek yang diisi oleh JavaScript -->
+            <div class="gr" id="gr"></div>
+
+        </section>
+
+
+        <!-- Pengalaman atau perjalanan -->
+        <section class="sec" id="tur">
+
+            <h2 class="rv">Milestones</h2>
+
+            <p class="sb rv">
+                A timeline of my growth, achievements, and moments that shaped my journey.
+            </p>
+
+            <!-- Daftar pengalaman yang diisi oleh JavaScript -->
+            <div class="tur" id="tur-l"></div>
+
+        </section>
+
+
+        <!-- Daftar alat dan teknologi -->
+        <section class="sec" id="alat">
+
+            <h2 class="rv">Tools</h2>
+
+            <p class="sb rv">
+                The tools behind my ideas, designs, and creations.
+            </p>
+
+            <div class="chips rv" id="tchips" role="group" aria-label="Filter kategori tools"></div>
+            <!-- Konten tools yang diisi oleh JavaScript -->
+            <div id="tools"></div>
+
+        </section>
+
+
+        <!-- Rak buku dan ulasan bacaan -->
+        <section class="sec" id="buku">
+
+            <h2 class="rv">Bookshelf</h2>
+
+            <p class="sb rv" id="bksub">
+              Some books leave you with more than just a story. Here are a few of my reads, personal reflections, 
+              and recommendations worth passing along.
+            </p>
+
+            <!-- Filter genre buku -->
+            <div class="chips rv" id="bkchips" role="group" aria-label="Filter genre buku"></div>
+
+            <!-- Daftar buku yang diisi oleh JavaScript -->
+            <div class="gr" id="bkg"></div>
+
+        </section>
+
+
+        <!-- Informasi kontak -->
+        <section class="sec" id="kontak">
+
+            <div class="ct rv">
+
+                <h2>Let's Connect.</h2>
+
+                <p>
+                  Have an idea, a project in mind, or an opportunity to share? I'd love to hear from you. Let's make something meaningful together.
+                </p>
+
+                <!-- Email untuk menghubungi pemilik portofolio -->
+                <a class="ml2" href="mailto:halo@namakamu.com">
+                    tiarasusilo12@gmail.com
+                </a>
+
+                <!-- Tautan media sosial -->
+                <div class="so">
+                    <a href="#kontak">LinkedIn</a>
+                    <a href="https://www.instagram.com/tiaaraaay_/">Instagram</a>
+                    <a href="https://github.com/tiarasusilo">GitHub</a>
+                    <a href="/assets/CV_Asya.pdf" download="CV_Asya.pdf">
+                        Unduh CV
+                    </a>
+                </div>
+
+                <form class="mf" id="mf" novalidate>
+    <h3 class="mft">Leave a Little Note</h3>
+
+    <div class="mfr">
+        <label class="fld">
+            <span>Name</span>
+            <input type="text" name="name" maxlength="40" autocomplete="name" placeholder="Your name">
+        </label>
+        <label class="fld">
+            <span>Email (optional)</span>
+            <input type="email" name="email" id="mfe" maxlength="80" autocomplete="email" placeholder="urname@email.com">
+        </label>
+    </div>
+
+    <label class="fld">
+        <span>Your Message</span>
+        <textarea name="message" id="mfm" rows="4" maxlength="500" placeholder="Leave a message for me…"></textarea>
+    </label>
+
+    <!-- Kolom jebakan untuk bot, jangan dihapus -->
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+
+    <div class="mfb">
+        <button class="send" type="submit" id="mfs">Send Message</button>
+        <span class="cnt" id="mfc">0/500</span>
+    </div>
+
+    <p class="mfst" id="mfst" role="status"></p>
+    <p class="mfn">Your message will be sent securely through a third-party form service and used only to respond to your inquiry.</p>
+</form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer halaman -->
+        <div class="ft">
+            A little space for my ideas, projects, and stories.
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         PEMUTAR / MINI PLAYER
+    ========================== -->
+    <div class="pb" id="pb" role="region" aria-label="Pemutar">
+
+        <!-- Informasi lagu atau konten yang sedang diputar -->
+        <button class="nw" id="nw" aria-label="Buka detail lagu">
+
+            <span class="cv" id="pc"></span>
+
+            <span style="min-width:0">
+                <div class="t" id="pt"></div>
+                <div class="a">Asya Tiara Syafitrah Susilo</div>
+            </span>
+
+        </button>
+
+        <!-- Tombol kontrol pemutar -->
+        <div class="ctr">
+
+            <div class="bt">
+                <button id="pv" aria-label="Sebelumnya"></button>
+                <button class="pp" id="pp" aria-label="Putar"></button>
+                <button class="nx" id="nx" aria-label="Berikutnya"></button>
+            </div>
+
+            <!-- Progress bar dan durasi pemutaran -->
+            <div class="pg">
+
+                <span id="te">0:00</span>
+
+                <div class="sk" id="sk" role="slider" tabindex="0" aria-label="Posisi lagu" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <i id="sf"></i>
+                </div>
+
+                <span id="tt">0:30</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         POP-UP DETAIL PROYEK
+    ========================== -->
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Detail lagu" hidden>
+
+        <!-- Tombol menutup pop-up -->
+        <button class="x" id="sx" aria-label="Tutup">
+            &#10005;
+        </button>
+
+        <div class="sg">
+
+            <!-- Informasi detail konten -->
+            <span class="cv" id="sc"></span>
+
+            <div>
+                <h2 id="st"></h2>
+                <div class="ar" id="sa"></div>
+                <div class="gn" id="sg"></div>
+                <div class="ls" id="sl"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         POP-UP REVIEW BUKU
+    ========================== -->
+    <div class="sheet" id="bks" role="dialog" aria-modal="true" aria-label="Review buku" hidden>
+
+        <!-- Tombol menutup review -->
+        <button class="x" id="bkx" aria-label="Tutup">
+            &#10005;
+        </button>
+
+        <div class="sg">
+
+            <!-- Sampul buku -->
+            <div id="bkc"></div>
+
+            <!-- Informasi dan ulasan buku -->
+            <div>
+                <h2 id="bkt"></h2>
+                <div class="ar" id="bka"></div>
+                <div class="gn" id="bkn"></div>
+                <div class="bv" id="bkv"></div>
+
+                <!-- Kutipan dari buku -->
+                <blockquote class="bq" id="bkq"></blockquote>
+
+                <!-- Pendapat pribadi tentang buku -->
+                <p class="bn" id="bko"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         POP-UP SAPAAN PENGUNJUNG
+    ========================== -->
+    <div class="lo" id="lo" role="dialog" aria-modal="true" aria-labelledby="lh">
+
+        <form class="lc" id="lf" novalidate>
+
+            <!-- Logo pada formulir -->
+            <div class="lg">
+                <b aria-hidden="true">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </b>
+
+                tiara.fm
+            </div>
+
+            <!-- Judul dan deskripsi -->
+            <h1 id="lh">Mau mulai dengar dari mana?</h1>
+
+            <p class="sb2">
+                Pilih siapa kamu, dan aku siapkan lagu yang paling pas.
+                Tidak perlu akun atau kata sandi.
+            </p>
+
+            <!-- Input nama pengunjung -->
+            <label class="f" for="ln">
+                Namamu (boleh dikosongkan)
+            </label>
+
+            <input type="text" id="ln" maxlength="24" autocomplete="off" placeholder="Misalnya Rani">
+
+
+            <!-- Pilihan peran pengunjung -->
+            <fieldset>
+
+                <legend>Aku adalah</legend>
+
+                <div class="rg">
+
+                    <label class="rc">
+                        <input type="radio" name="role" value="recruiter">
+
+                        <span>
+                            <i style="background:#FFD23F">R</i>
+                            <b>Recruiter</b>
+                            <em>Sedang mencari kandidat</em>
+                        </span>
+                    </label>
+
+
+                    <label class="rc">
+                        <input type="radio" name="role" value="klien">
+
+                        <span>
+                            <i style="background:#FF5C9D">K</i>
+                            <b>Klien</b>
+                            <em>Butuh desain atau situs</em>
+                        </span>
+                    </label>
+
+
+                    <label class="rc">
+                        <input type="radio" name="role" value="kreator">
+
+                        <span>
+                            <i style="background:#C9B8FF">D</i>
+                            <b>Sesama kreator</b>
+                            <em>Desainer atau developer</em>
+                        </span>
+                    </label>
+
+
+                    <label class="rc">
+                        <input type="radio" name="role" value="tamu">
+
+                        <span>
+                            <i style="background:#34E0A1">T</i>
+                            <b>Tamu</b>
+                            <em>Cuma lihat-lihat</em>
+                        </span>
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- Pesan validasi jika formulir belum sesuai -->
+            <div class="er" id="er" role="alert"></div>
+
+            <!-- Tombol mengirim pilihan pengunjung -->
+            <button class="go2" type="submit">
+                Mulai mendengarkan
+            </button>
+
+            <!-- Tombol melewati formulir -->
+            <button class="sk2" type="button" id="lsk">
+                Lewati saja
+            </button>
+
+            <!-- Keterangan privasi -->
+            <p class="nt">
+                Ini hanya sapaan supaya halaman terasa personal.
+                Tidak ada akun, dan apa yang kamu isi tidak dikirim ke mana pun.
+            </p>
+
+        </form>
+
+    </div>
+
+    <!-- Notifikasi kecil untuk interaksi pengguna -->
+    <div class="ts" id="ts" role="status"></div>
+
+
+    <!-- File JavaScript untuk mengatur interaksi halaman -->
+    <script src="main.js"></script>
+
+</body>
+</html>
